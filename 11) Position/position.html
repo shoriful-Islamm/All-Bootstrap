@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body> 
+    <div style="margin-top: 50px;"></div>
+    <div class="container">
+
+        
+        <!-- ########## START HERE ########## -->
+        <h1 style="text-align: center;">Position</h1>
+        <hr>
+
+        <!-- Arrange elements -->
+
+        <div class="bg-light position-relative" style="height: 250px;">
+            <div class="bg-dark position-absolute top-0 start-0" style="width: 50px; height: 50px;"></div>
+            <div class="bg-info position-absolute top-0 end-0" style="width: 50px; height: 50px;"></div>
+            <div class="bg-primary position-absolute top-50 start-50" style="width: 50px; height: 50px;"></div>
+            <div class="bg-secondary position-absolute bottom-50 end-50" style="width: 50px; height: 50px;"></div>
+            <div class="bg-danger position-absolute bottom-0 start-0" style="width: 50px; height: 50px;"></div>
+            <div class="bg-warning position-absolute bottom-0 end-0" style="width: 50px; height: 50px;"></div>
+          </div>
+
+          <br><br>
+
+          <!-- Center elements -->
+
+          <div class="bg-light position-relative" style="height: 250px;">
+            <div class="bg-dark position-absolute top-0 start-0 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-0 start-50 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-0 start-100 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-50 start-0 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-50 start-50 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-50 start-100 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-100 start-0 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-100 start-50 translate-middle" style="width: 50px; height: 50px;"></div>
+            <div class="bg-dark position-absolute top-100 start-100 translate-middle" style="width: 50px; height: 50px;"></div>
+          </div>
+
+          <br><br><br>
+
+          <button type="button" class="btn btn-primary position-relative">
+            Mails <span class="position-absolute top-0 start-100 translate-middle badge bg-secondary rounded-pill">+35</span>
+          </button>
+
+          <hr>
+          
+          <button type="button" class="btn btn-dark position-relative">
+            Marker <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#212529" class="position-absolute top-100 start-50 translate-middle mt-1 bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+          </button>
+
+          <hr>
+          
+          <button type="button" class="btn btn-primary position-relative">
+            Alerts <span class="position-absolute top-0 start-100 translate-middle badge bg-danger p-2 rounded-circle border border-light"><span class="visually-hidden">unread messages</span></span>
+          </button>
+
+          <br><br>
+  
+        
+    </div>  
+    <div style="margin-top: 50px;"></div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
